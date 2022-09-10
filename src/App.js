@@ -1,14 +1,46 @@
 import "./App.css";
 import React, { Component } from "react";
-import MyComponent from "./MyComponent";
-import Counter from "./Counter";
-import Say from "./Say";
-import EventPractice from "./EventPractice";
+import ScrollBox from "./compoent/ScrollBox";
+import IterationSample from "./compoent/iterationSample";
 
+class App extends Component {
+  render() {
+    return (
+      <IterationSample/>
+    );
+  }
+}
+/*
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <ScrollBox ref={(ref) => this.scrollBox=ref}/>
+        <button onClick={() => this.scrollBox.scrollToBottom()}>
+          맨 밑으로
+        </button>
+      </div>
+    )
+  }
+}
+ */
+/*
+class App extends Component {
+  render() {
+    return (
+      <ValidationSample/>
+    )
+  }
+}
+
+ */
+
+/*
 // 클래스형 컴포넌트 이벤트용
 const App = () => {
-  return <EventPractice/>;
+  return <EventPracticeFuntion/>;
 };
+ */
 
 /*
 // 함수형 컴포넌트 useState 사용

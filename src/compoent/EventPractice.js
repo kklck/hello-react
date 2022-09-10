@@ -29,7 +29,7 @@ class EventPractice extends Component {
   }
 */
 
-  // 바벨의 transform-class-properties, constructor 생성자 생략가능
+  // 바벨의 transform-class-properties, constructor 생성자 생략 가능
   // target.name 이용하여 여러 값을 쉽게 변경
   handleChange = (e) => {
     this.setState({
